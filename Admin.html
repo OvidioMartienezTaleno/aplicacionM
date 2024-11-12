@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Mensajería</title>
+    <link rel="stylesheet" href="Styles/admin.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Panel de Administración de Mensajes</h1>
+        </header>
+
+        <nav class="sidebar">
+            <ul>
+                <li><button class="nav-btn" onclick="mostrarEstadisticas()">Ver Estadísticas</button></li>
+            </ul>
+        </nav>
+
+        <section class="content">
+            <div id="output" class="output"></div>
+            
+            <div id="statistics" class="statistics hidden">
+                <h2>Estadísticas de Actividad de Usuarios</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Total de Mensajes</h3>
+                        <p id="total-messages">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Usuarios Activos</h3>
+                        <p id="active-users">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Mensajes por Día</h3>
+                        <p id="daily-messages-chart">0</p>
+                    </div>
+                </div>
+            </div>
+            <p>Usuarios registrados</p>
+            <div class="chat-list"></div>
+        </section>
+    </div>
+    <script src="Scripts/admin.js"></script>
+</body>
+</html>
